@@ -1,0 +1,176 @@
+@import "circle.css";
+@import "fonts.css";
+
+
+body {
+    background-color: #151515;
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    overflow: hidden;
+}
+
+.img-header {
+    width: 45%;
+}
+
+.section {
+    padding-left: 60px;
+    padding-right: 60px;
+    max-width: 1920px;
+    margin: auto;
+    position: relative;
+}
+
+.container {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+}
+
+.title-content {
+    padding-bottom: 75px;
+}
+
+.flex-chlorophyll-img {
+    max-width: 680px;
+    width: 50%;
+}
+
+.flex-chlorophyll {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+
+.flex-chlorophyll-text {
+    margin-left: 40px;
+    max-width: 760px;
+}
+
+.img-header-flowers {
+    max-width: 100%;
+}
+
+.flex-chlorophyll-text-flower {
+    position: relative;
+    right: -150px;
+    margin: 125px 0 220px 0;
+}
+
+.img-header {
+    position: absolute;
+    right: -14px;
+    top: -6px;
+}
+
+.butterfly-chlorophyll {
+    position: absolute;
+    top: -350px;
+    left: -60px;
+    width: auto;
+}
+
+.title-carotinoid {
+    margin-top: -100px;
+}
+
+.flex-img-wrap {
+    display: flex;
+    justify-content: space-between;
+}
+
+.flex-img-wrap-formula {
+    padding-top: 97vh;
+    width: 57%;
+}
+
+.butterfly-1 {
+    position: absolute;
+    top: 121vh;
+    right: 20vw;
+    width: 10%;
+}
+
+.butterfly-2 {
+    position: absolute;
+    top: 50px;
+    right: 600px;
+    width: 14%;
+}
+
+.yellow-flowers {
+    position: absolute;
+    top: -155px;
+    right: -60px;
+    width: 45%;
+}
+
+.flex-anto {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin-top: 100px;
+}
+
+.flex-anto-box {
+    max-width: 770px;
+}
+
+.m-w-950 {
+    max-width: 950px;
+}
+
+.flex-antitoxins {
+    display: flex;
+    justify-content: center
+}
+
+.red-flowers {
+    position: relative;
+    left: -60px;
+    width: 34%;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+@media only screen and (max-width: 1150px)  {
+
+    .flex-circle {
+        margin-top: 80px;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+
+    .flex-circle-element {
+        margin: 0 0 15px 0;
+    }
+
+    .flex-antitoxins {
+        display: block;
+    }
+}
+
+
+@media only screen and (max-width: 560px)  {
+    .circle {
+        r: 20 ;
+    }
+    .flex-circle-element-svg {
+        margin: auto;
+    }
+}

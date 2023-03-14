@@ -1,0 +1,89 @@
+@font-face {
+    font-family: "KyivTypeSans-VarGX";
+    src: url("../fonts/KyivTypeSans-VarGX.ttf") format("truetype");
+}
+
+h1, h2, h3, h4, h5, p, span, a {
+    color: #ffffff;
+    font-family: "KyivTypeSans-VarGX", serif, sans-serif;
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+.color-green {
+    color: #5CF935;
+}
+
+.color-red {
+    color: #DE0000;
+}
+
+.color-blue {
+    color: #1C5BFF;
+}
+
+.title-1 {
+    font-weight: 500;
+    font-size: 170px;
+    line-height: 205px;
+}
+
+.title-2 {
+    font-weight: 500;
+    font-size: 75px;
+    line-height: 102px;
+    text-transform: capitalize;
+    margin-bottom: 15px;
+}
+
+.paragraph {
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 58px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.head-text {
+    font-weight: 500;
+    font-size: 120px;
+    line-height: 174px;
+}
+
+@media only screen and (max-width: 1150px) {
+    .title-1 {
+        font-size: 120px;
+        line-height: 160px;
+    }
+
+    .title-2 {
+        font-size: 60px;
+        line-height: 82px;
+    }
+
+    .paragraph {
+        font-size: 38px;
+        line-height: 48px;
+    }
+
+    .link {
+        font-size: 30px;
+        line-height: 40px;
+    }
+    .head-text {
+        font-size: 120px;
+        line-height: 174px;
+    }
+
+}
+
+@media only screen and (max-width: 950px) {
+    .head-text {
+        font-size: 80px;
+        line-height: 134px;
+    }
+}
