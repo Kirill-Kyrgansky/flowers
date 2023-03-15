@@ -4,6 +4,39 @@
 
 .flex-circle-element-svg {
     margin: 0 25px 0 0;
+    cursor: pointer;
+    animation: scale-down 0.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+
+}
+
+.flex-circle-element-svg:hover {
+    animation: scale-up 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+.flex-circle-element-svg:active {
+    animation: scale-down 0.1s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+@keyframes scale-up {
+    0% {
+        -webkit-transform: scale(0.5);
+        transform: scale(1);
+    }
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1.1);
+    }
+}
+
+@keyframes scale-down {
+    0% {
+        -webkit-transform: scale(0.5);
+        transform: scale(1.1);
+    }
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
 }
 
 .red {
@@ -35,7 +68,7 @@
 }
 
 .flex-circle {
-    margin-top: 80px;
+    margin-top: 20px;
     display: flex;
     flex-wrap: wrap;
     align-items: flex-end;
@@ -102,3 +135,4 @@
 .mask span:nth-child(6) {
     background-image: linear-gradient(90deg, #DE0000, orange, #FAFF00, #5CF935, #1C5BFF, #DE0085);
 }
+

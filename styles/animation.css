@@ -1,0 +1,19 @@
+.error {
+    font-weight: 500;
+    font-size: 75px;
+    line-height: 102px;
+    text-transform: capitalize;
+    margin-bottom: 15px;
+    animation: 0.2s tremor ease-out infinite;
+}
+
+@keyframes tremor {
+    0% {
+        left: -1px;
+        transform: translateX(-4%);
+    }
+    100% {
+        left: 1px;
+        transform: translateX(4%);
+    }
+}

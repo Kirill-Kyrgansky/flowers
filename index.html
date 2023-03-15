@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="styles/style.css">
     <title>Flowers</title>
     <script type="module" src="scripts/index.js"></script>
+    <script type="module" src="scripts/textJQ.js"></script>
 </head>
 <body>
 <main>
@@ -104,39 +105,39 @@
                     цвет для вещества</p>
             </div>
             <div>
-            <div class="flex-circle">
-                <p class="title-2">Каротиноиды</p>
-                <div class="flex-circle-element">
-                    <svg class="flex-circle-element-svg" viewBox="0 0 80 80" width="80" height="80">
-                        <circle class="circle red" cx="40" cy="40" r="38"/>
-                    </svg>
-                    <svg class="flex-circle-element-svg" viewBox="0 0 80 80" width="80" height="80">
-                        <circle class="circle yellow" cx="40" cy="40" r="38"/>
-                    </svg>
-                    <svg class="flex-circle-element-svg" viewBox="0 0 80 80" width="80" height="80">
-                        <circle class="circle green" cx="40" cy="40" r="38"/>
-                    </svg>
-                    <svg class="flex-circle-element-svg" viewBox="0 0 80 80" width="80" height="80">
-                        <circle class="circle blue" cx="40" cy="40" r="38"/>
-                    </svg>
+                <div class="flex-circle">
+                    <p class="title-2" id="carotenoid">Каротиноиды</p>
+                    <div class="flex-circle-element" >
+                        <svg class="flex-circle-element-svg" viewBox="0 0 80 80" width="80" height="80">
+                            <circle id="carotenoid-done" class="circle red " cx="40" cy="40" r="38"/>
+                        </svg>
+                        <svg class="flex-circle-element-svg" viewBox="0 0 80 80" width="80" height="80">
+                            <circle id="carotenoid-error" class="circle yellow" cx="40" cy="40" r="38"/>
+                        </svg>
+                        <svg class="flex-circle-element-svg" viewBox="0 0 80 80" width="80" height="80">
+                            <circle id="carotenoid-error" class="circle green" cx="40" cy="40" r="38"/>
+                        </svg>
+                        <svg class="flex-circle-element-svg" viewBox="0 0 80 80" width="80" height="80">
+                            <circle id="carotenoid-error" class="circle blue" cx="40" cy="40" r="38"/>
+                        </svg>
+                    </div>
                 </div>
-            </div>
                 <div style="" class="flex-circle-line"></div>
             </div>
             <div class="flex-circle">
-                <p class="title-2">Антоцианины</p>
+                <p id="anthocyanins" class="title-2">Антоцианины</p>
                 <div class="flex-circle-element">
                     <svg class="flex-circle-element-svg" viewBox="0 0 80 80" width="80" height="80">
-                        <circle class="circle red" cx="40" cy="40" r="38"/>
+                        <circle id="anthocyanins-error" class="circle red" cx="40" cy="40" r="38"/>
                     </svg>
                     <svg class="flex-circle-element-svg" viewBox="0 0 80 80" width="80" height="80">
-                        <circle class="circle yellow" cx="40" cy="40" r="38"/>
+                        <circle id="anthocyanins-error" class="circle yellow" cx="40" cy="40" r="38"/>
                     </svg>
                     <svg class="flex-circle-element-svg" viewBox="0 0 80 80" width="80" height="80">
-                        <circle class="circle green" cx="40" cy="40" r="38"/>
+                        <circle id="anthocyanins-error" class="circle green" cx="40" cy="40" r="38"/>
                     </svg>
                     <svg class="flex-circle-element-svg" viewBox="0 0 80 80" width="80" height="80">
-                        <circle class="circle blue" cx="40" cy="40" r="38"/>
+                        <circle id="anthocyanins-done" class="circle blue" cx="40" cy="40" r="38"/>
                     </svg>
                 </div>
                 <div style="" class="flex-circle-line"></div>
@@ -145,16 +146,16 @@
                 <p id="chlorophyll" class="title-2">Хлорофилл</p>
                 <div class="flex-circle-element">
                     <svg class="flex-circle-element-svg" viewBox="0 0 80 80" width="80" height="80">
-                        <circle class="circle red" cx="40" cy="40" r="38"/>
+                        <circle id="chlorophyll-error" class="circle red" cx="40" cy="40" r="38"/>
                     </svg>
                     <svg class="flex-circle-element-svg" viewBox="0 0 80 80" width="80" height="80">
-                        <circle class="circle yellow" cx="40" cy="40" r="38"/>
+                        <circle id="chlorophyll-error" class="circle yellow" cx="40" cy="40" r="38"/>
                     </svg>
                     <svg class="flex-circle-element-svg" viewBox="0 0 80 80" width="80" height="80">
-                        <circle class="circle green" cx="40" cy="40" r="38"/>
+                        <circle id="chlorophyll-done" class="circle green" cx="40" cy="40" r="38"/>
                     </svg>
                     <svg class="flex-circle-element-svg" viewBox="0 0 80 80" width="80" height="80">
-                        <circle class="circle blue" cx="40" cy="40" r="38"/>
+                        <circle id="chlorophyll-error" class="circle blue" cx="40" cy="40" r="38"/>
                     </svg>
                 </div>
             </div>
@@ -163,7 +164,7 @@
     <footer class="section">
         <div class="container footer ">
             <a href="https://instagram.com/wolf.eps?igshid=YmMyMTA2M2Y=" class="link">inst: @wolf.eps </a>
-            <a href="tat.wolf.work@gmail.com" type="email" class="link">tat.wolf.work@gmail.com</a>
+            <a href="mailto: tat.wolf.work@gmail.com" type="email" class="link">tat.wolf.work@gmail.com</a>
             <img src="img/Layer_1.svg" alt="Логотип">
         </div>
     </footer>
