@@ -11,4 +11,4 @@ setInterval(function () {
     show.setAttribute('data-up', '')
 
     next.setAttribute('data-show', '')
-}, 1500)
+}, 100500)

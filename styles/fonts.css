@@ -40,8 +40,8 @@ h1, h2, h3, h4, h5, p, span, a {
 
 .paragraph {
     font-weight: 500;
-    font-size: 48px;
-    line-height: 58px;
+    font-size: 44px;
+    line-height: 56px;
 }
 
 .text-center {
@@ -52,6 +52,11 @@ h1, h2, h3, h4, h5, p, span, a {
     font-weight: 500;
     font-size: 120px;
     line-height: 174px;
+}
+
+.head-animation-text {
+    line-height: 140px;
+    font-size: 130px;
 }
 
 @media only screen and (max-width: 1150px) {
@@ -78,12 +83,28 @@ h1, h2, h3, h4, h5, p, span, a {
         font-size: 120px;
         line-height: 174px;
     }
-
+    .head-animation-text {
+        font-size: 90px;
+        line-height: 72px;
+    }
 }
 
 @media only screen and (max-width: 950px) {
     .head-text {
         font-size: 80px;
         line-height: 134px;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+    .head-animation-text {
+        line-height: 49px;
+        font-size: 56px;
+    }
+}
+@media only screen and (max-width: 420px) {
+    .head-animation-text {
+        line-height: 35px;
+        font-size: 34px;
     }
 }

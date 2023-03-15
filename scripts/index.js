@@ -5,7 +5,8 @@ let errorCarotenoid = 'error'
 let titleAnthocyanins = 'error'
 let errorChlorophyll = 'error'
 let title = 'title-2'
-
+let butterfly1 = document.querySelector('#butterfly-1')
+let butterfly2 = document.querySelector('#butterfly-2')
 document.body.addEventListener('click', e => {
     if (e.target.tagName === 'circle') {
         if (e.target.id === 'carotenoid-done') {
@@ -50,3 +51,10 @@ document.body.addEventListener('click', e => {
         }
     }
 })
+
+// document.body.addEventListener('click', e => {
+//     if (e.target.className === 'yellow-flowers') {
+//         butterfly1.className = 'butterfly-1-active'
+//         butterfly2.className = 'butterfly-2-active'
+//     }
+// })

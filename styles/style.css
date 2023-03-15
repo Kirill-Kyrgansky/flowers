@@ -32,12 +32,12 @@ main {
 }
 
 .title-content {
-    padding-bottom: 75px;
+    padding: 100px 0 75px 0;
 }
 
 .flex-chlorophyll-img {
     max-width: 680px;
-    width: 50%;
+    width: 36%;
 }
 
 .flex-chlorophyll {
@@ -45,7 +45,6 @@ main {
     justify-content: space-between;
     align-items: flex-start;
 }
-
 
 .flex-chlorophyll-text {
     margin-left: 40px;
@@ -72,7 +71,7 @@ main {
     position: absolute;
     top: -350px;
     left: -60px;
-    width: auto;
+    width: 50%;
 }
 
 .title-carotinoid {
@@ -85,7 +84,7 @@ main {
 }
 
 .flex-img-wrap-formula {
-    padding-top: 97vh;
+    padding-top: 35vh;
     width: 57%;
 }
 
@@ -94,13 +93,41 @@ main {
     top: 121vh;
     right: 20vw;
     width: 10%;
+    opacity: 0;
 }
+
+.butterfly-1-active {
+    position: absolute;
+    top: 121vh;
+    right: 20vw;
+    width: 10%;
+    animation: opacity 0.6s;
+}
+
 
 .butterfly-2 {
     position: absolute;
     top: 50px;
     right: 600px;
     width: 14%;
+    opacity: 0;
+}
+
+.butterfly-2-active {
+    position: absolute;
+    top: 50px;
+    right: 600px;
+    width: 14%;
+    animation: opacity 0.6s;
+}
+
+@keyframes opacity {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
 
 .yellow-flowers {
@@ -108,7 +135,14 @@ main {
     top: -155px;
     right: -60px;
     width: 45%;
+    animation: scale-down 0.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+    cursor: pointer;
 }
+
+.yellow-flowers:hover {
+    animation: scale-up 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
 
 .flex-anto {
     display: flex;
@@ -140,12 +174,12 @@ main {
 .footer {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-end;
+    margin-bottom: 20px;
 }
 
 
-
-@media only screen and (max-width: 1150px)  {
+@media only screen and (max-width: 1150px) {
 
     .flex-circle {
         margin-top: 80px;
@@ -166,10 +200,11 @@ main {
 }
 
 
-@media only screen and (max-width: 560px)  {
+@media only screen and (max-width: 560px) {
     .circle {
-        r: 20 ;
+        r: 20;
     }
+
     .flex-circle-element-svg {
         margin: auto;
     }

@@ -17,6 +17,15 @@
     animation: scale-down 0.1s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
 }
 
+@keyframes opacity {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
 @keyframes scale-up {
     0% {
         -webkit-transform: scale(0.5);
@@ -64,7 +73,8 @@
     height: 10.36vw;
     position: relative;
     overflow: hidden;
-    margin: 3.74vw 0 0 0;
+    /*margin: 3.74vw 0 0 0;*/
+    z-index: 0;
 }
 
 .flex-circle {
