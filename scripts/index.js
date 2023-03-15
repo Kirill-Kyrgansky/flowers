@@ -53,9 +53,9 @@ document.body.addEventListener('click', e => {
     }
 })
 
-// document.body.addEventListener('click', e => {
-//     if (e.target.className === 'yellow-flowers') {
-//         butterfly1.className = 'butterfly-1-active'
-//         butterfly2.className = 'butterfly-2-active'
-//     }
-// })
+document.body.addEventListener('click', e => {
+    if (e.target.className === 'yellow-flowers') {
+        butterfly1.className = 'butterfly-1-active'
+        butterfly2.className = 'butterfly-2-active'
+    }
+})
