@@ -36,8 +36,9 @@ main {
 }
 
 .flex-chlorophyll-img {
+    position: relative;
     max-width: 680px;
-    width: 36%;
+    /*width: 36%;*/
 }
 
 .flex-chlorophyll {
@@ -46,9 +47,20 @@ main {
     align-items: flex-start;
 }
 
+.flex-carotenoids {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-top: -200px;
+}
+
 .flex-chlorophyll-text {
-    margin-left: 40px;
     max-width: 760px;
+    margin-left: 50px;
+}
+
+.img-wrap-flowers {
+    width: 100%;
 }
 
 .img-header-flowers {
@@ -68,14 +80,11 @@ main {
 }
 
 .butterfly-chlorophyll {
-    position: absolute;
-    top: -350px;
-    left: -60px;
-    width: 50%;
+    width: 86%;
 }
 
 .title-carotinoid {
-    margin-top: -100px;
+    /*margin-top: -100px;*/
 }
 
 .flex-img-wrap {
