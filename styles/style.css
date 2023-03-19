@@ -1,7 +1,7 @@
 @import "circle.css";
 @import "fonts.css";
 @import "animation.css";
-
+@import "animation-title.css";
 body {
     background-color: #151515;
     margin: 0;
@@ -17,8 +17,8 @@ main {
 }
 
 .section {
-    padding-left: 60px;
-    padding-right: 60px;
+    padding-left: 20px;
+    padding-right: 20px;
     max-width: 1920px;
     margin: auto;
     position: relative;
@@ -38,29 +38,51 @@ main {
 .flex-chlorophyll-img {
     position: relative;
     max-width: 680px;
-    /*width: 36%;*/
+    width: 100%;
 }
 
 .flex-chlorophyll {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
+    margin-top: -60px;
 }
+
 
 .flex-carotenoids {
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
-    margin-top: -200px;
+    margin-top: 200px;
+}
+
+.flex-chlorophyll-text-flower-left {
+    position: absolute;
+    left: 0;
+    bottom: -700px;
+}
+
+.flex-chlorophyll-text-butterfly-left {
+    position: absolute;
+    left: 592px;
+    bottom: -300px;
+    width: 17%;
 }
 
 .flex-chlorophyll-text {
     max-width: 760px;
     margin-left: 50px;
+    margin-top: 160px;
+}
+
+.chlorophyll-img {
+    display: block;
+    width: 100%;
 }
 
 .img-wrap-flowers {
     width: 100%;
+    position: relative;
 }
 
 .img-header-flowers {
@@ -68,9 +90,11 @@ main {
 }
 
 .flex-chlorophyll-text-flower {
-    position: relative;
+    position: absolute;
     right: -150px;
     margin: 125px 0 220px 0;
+    bottom: -500px;
+    width: 43%;
 }
 
 .img-header {
@@ -98,16 +122,12 @@ main {
 }
 
 .butterfly-1 {
-    position: absolute;
-    top: 121vh;
-    right: 20vw;
-    width: 10%;
     opacity: 0;
 }
 
 .butterfly-1-active {
     position: absolute;
-    top: 121vh;
+    top: 36vw;
     right: 20vw;
     width: 10%;
     animation: opacity 0.6s;
@@ -146,10 +166,59 @@ main {
     width: 45%;
     animation: scale-down 0.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
     cursor: pointer;
+    animation: spin 1.5s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(-2deg);
+    }
+    50% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(-2deg);
+
+    }
+}
+
+.yellow-flowers:active {
+    animation: scale-down 0.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+
 }
 
 .yellow-flowers:hover {
     animation: scale-up 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+.green-circle {
+    position: absolute;
+    max-width: 680px;
+    width: 100%;
+    top: -26px;
+    left: -7px;
+    animation: pulse 2s linear infinite;
+}
+
+.pulse {
+    animation: pulse 2s linear infinite;
+}
+@keyframes pulse {
+    0% {
+        opacity: 1;
+    }
+    25% {
+        opacity: 0.8;
+    }
+    50% {
+        opacity: 0.6;
+    }
+    75% {
+        opacity: 0.8;
+    }
+    100% {
+        opacity: 1;
+    }
 }
 
 
@@ -187,6 +256,13 @@ main {
     margin-bottom: 20px;
 }
 
+.mobile {
+    display: none;
+}
+
+@media only screen and (max-width: 1400px) {
+
+}
 
 @media only screen and (max-width: 1150px) {
 
@@ -206,8 +282,95 @@ main {
     .flex-antitoxins {
         display: block;
     }
+
+    .mask span:nth-child(1) {
+        top: 150px;
+    }
+
+    .mask span {
+        top: 150px !important
+    }
+
+    .mask {
+        height: 150px;
+    }
+
+    .chlorophyll-img {
+        margin-top: -80px;
+    }
+
+    .flex-chlorophyll-text-flower {
+        width: 59vw;
+    }
+
+    .flex-chlorophyll-text-flower-left {
+        bottom: -400px;
+        width: 45%;
+    }
+
+    .flex-chlorophyll-text-butterfly-left {
+        left: 32vw;
+        bottom: -50px;
+    }
 }
 
+@media only screen and  (max-width: 750px){
+    .title-1 {
+        font-size: 60px;
+        line-height: 90px;
+    }
+    .section {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .flex-chlorophyll {
+        display: block;
+    }
+    .flex-chlorophyll-text {
+        margin-top: 80px;
+    }
+    .flex-carotenoids {
+        display: block;
+        margin-top: 50px;
+    }
+
+    .mobile {
+        display: block;
+    }
+    .desktop {
+        display: none;
+    }
+
+    .img-mobile-block {
+        margin-top: 60px;
+        margin-right: -20px;
+    }
+    .img-mobile {
+        width: 100%;
+        margin-top: -150px;
+    }
+    .title-carotinoid {
+        margin-top: 0;
+    }
+    .chlorophyll-img {
+        margin-top: 50px;
+    }
+    .flex-img-wrap {
+        margin-top: 0;
+    }
+    .flex-anto-box{
+        margin-left: 50px;
+    }
+    .circle-container {
+        margin: 0 50px;
+    }
+    .flex-circle-line {
+        width: 75%;
+    }
+    .flex-anto-box {
+        margin-top: 340px;
+    }
+}
 
 @media only screen and (max-width: 560px) {
     .circle {

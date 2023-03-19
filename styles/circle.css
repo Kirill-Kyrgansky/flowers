@@ -5,7 +5,7 @@
 .flex-circle-element-svg {
     margin: 0 25px 0 0;
     cursor: pointer;
-    animation: scale-down 0.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+    animation: spin 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
 
 }
 
@@ -17,6 +17,7 @@
     animation: scale-down 0.1s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
 }
 
+
 @keyframes opacity {
     0% {
         opacity: 0;
@@ -24,6 +25,7 @@
     100% {
         opacity: 1;
     }
+
 }
 
 @keyframes scale-up {
@@ -69,13 +71,7 @@
     stroke-width: 5px;
 }
 
-.mask {
-    height: 10.36vw;
-    position: relative;
-    overflow: hidden;
-    /*margin: 3.74vw 0 0 0;*/
-    z-index: 0;
-}
+
 
 .flex-circle {
     margin-top: 20px;
@@ -83,6 +79,7 @@
     flex-wrap: wrap;
     align-items: flex-end;
     justify-content: space-between;
+    padding:  0 55px;
 }
 
 .flex-circle-element {
@@ -98,51 +95,3 @@
 .circle-container {
     margin: 80px 0 20px 0;
 }
-
-.mask span {
-    display: block;
-    box-sizing: border-box;
-    position: absolute;
-    top: 10.36vw;
-    background-size: 100%;
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-repeat: no-repeat;
-}
-
-.mask span[data-show] {
-    transform: translateY(-100%);
-    transition: .5s transform ease-in-out;
-}
-
-.mask span[data-up] {
-    transform: translateY(-200%);
-    transition: .5s transform ease-in-out;
-}
-
-.mask span:nth-child(1) {
-    background-image: linear-gradient(45deg, #5CF935 50%, #33FF00);
-    top: 9.94vw;
-}
-
-.mask span:nth-child(2) {
-    background-image: linear-gradient(45deg, #1C5BFF 50%, #0085FF);
-}
-
-.mask span:nth-child(3) {
-    background-image: linear-gradient(45deg, #DE0085 50%, #FF31AD);
-}
-
-.mask span:nth-child(4) {
-    background-image: linear-gradient(45deg, #DE0000 50%, #FF0000);
-}
-
-.mask span:nth-child(5) {
-    background-image: linear-gradient(45deg, #EAEE1C 50%, #FAFF00);
-}
-
-.mask span:nth-child(6) {
-    background-image: linear-gradient(90deg, #DE0000, orange, #FAFF00, #5CF935, #1C5BFF, #DE0085);
-}
-
