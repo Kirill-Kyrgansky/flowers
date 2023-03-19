@@ -5,8 +5,6 @@
 .flex-circle-element-svg {
     margin: 0 25px 0 0;
     cursor: pointer;
-    animation: spin 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
-
 }
 
 .flex-circle-element-svg:hover {

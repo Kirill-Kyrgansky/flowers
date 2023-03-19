@@ -32,7 +32,7 @@ main {
 }
 
 .title-content {
-    padding: 100px 0 75px 0;
+    padding: 0 0 75px 0;
 }
 
 .flex-chlorophyll-img {
@@ -58,7 +58,7 @@ main {
 
 .flex-chlorophyll-text-flower-left {
     position: absolute;
-    left: 0;
+    left: -20px;
     bottom: -700px;
 }
 
@@ -312,6 +312,7 @@ main {
         left: 32vw;
         bottom: -50px;
     }
+
 }
 
 @media only screen and  (max-width: 750px){
@@ -362,7 +363,7 @@ main {
         margin-left: 50px;
     }
     .circle-container {
-        margin: 0 50px;
+        margin: 0 0;
     }
     .flex-circle-line {
         width: 75%;
@@ -379,5 +380,8 @@ main {
 
     .flex-circle-element-svg {
         margin: auto;
+    }
+    .link {
+        font-size: 18px;
     }
 }
