@@ -14,7 +14,7 @@ document.body.addEventListener('click', e => {
             errorCarotenoid = title
             e.target.className.baseVal = 'circle red mailto'
         } else if (e.target.id === 'carotenoid-error') {
-            carotenoid.className = errorCarotenoid
+            carotenoid.className = errorCarotenoid + ' title-2'
             setTimeout(() => {
                 carotenoid.classList.remove(errorCarotenoid)
                 carotenoid.className = title
@@ -29,7 +29,7 @@ document.body.addEventListener('click', e => {
             titleAnthocyanins = title
             e.target.className.baseVal = 'circle blue mailto'
         } else if (e.target.id === 'anthocyanins-error') {
-            anthocyanins.className = titleAnthocyanins
+            anthocyanins.className = titleAnthocyanins + ' title-2'
             setTimeout(() => {
                 anthocyanins.classList.remove(titleAnthocyanins)
                 anthocyanins.className = title
@@ -44,7 +44,7 @@ document.body.addEventListener('click', e => {
             errorChlorophyll = title
             e.target.className.baseVal = 'circle green mailto'
         } else if (e.target.id === 'chlorophyll-error') {
-            chlorophyll.className = errorChlorophyll
+            chlorophyll.className = errorChlorophyll + ' title-2'
             setTimeout(() => {
                 chlorophyll.classList.remove(errorChlorophyll)
                 chlorophyll.className = title

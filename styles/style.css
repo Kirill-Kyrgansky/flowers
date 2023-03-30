@@ -2,6 +2,7 @@
 @import "fonts.css";
 @import "animation.css";
 @import "animation-title.css";
+
 body {
     background-color: #151515;
     margin: 0;
@@ -19,6 +20,12 @@ main {
 .section {
     padding-left: 20px;
     padding-right: 20px;
+    max-width: 1920px;
+    margin: auto;
+    position: relative;
+}
+
+.section-img {
     max-width: 1920px;
     margin: auto;
     position: relative;
@@ -91,7 +98,7 @@ main {
 
 .flex-chlorophyll-text-flower {
     position: absolute;
-    right: -150px;
+    right: -20px;
     margin: 125px 0 220px 0;
     bottom: -500px;
     width: 43%;
@@ -164,7 +171,7 @@ main {
     top: -155px;
     right: -60px;
     width: 45%;
-    animation: scale-down 0.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+    animation: scale-down 0.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both ;
     cursor: pointer;
     animation: spin 1.5s linear infinite;
 }
@@ -203,6 +210,7 @@ main {
 .pulse {
     animation: pulse 2s linear infinite;
 }
+
 @keyframes pulse {
     0% {
         opacity: 1;
@@ -232,6 +240,7 @@ main {
 
 .flex-anto-box {
     max-width: 770px;
+    margin-top: 200px;
 }
 
 .m-w-950 {
@@ -259,13 +268,21 @@ main {
 .mobile {
     display: none;
 }
-.footer-link {
-    margin-left: 200px
-}
-@media only screen and (max-width: 1500px) {
-.footer-link {
-    margin-left: 60px
-}
+
+@media only screen and (max-width: 1300px) {
+    .title-1 {
+        font-size: 100px;
+    }
+
+    .mask span:nth-child(1) {
+        top: 204px;
+        left: 240px;
+    }
+
+    .mask span {
+        top: 204px !important;
+        left: 240px;
+    }
 }
 
 @media only screen and (max-width: 1150px) {
@@ -288,11 +305,17 @@ main {
     }
 
     .mask span:nth-child(1) {
-        top: 150px;
+        top: 160px;
+        left: 190px;
     }
 
     .mask span {
-        top: 150px !important
+        top: 160px !important;
+        left: 190px;
+    }
+
+    .title-1 {
+        font-size: 80px;
     }
 
     .mask {
@@ -319,21 +342,38 @@ main {
 
 }
 
-@media only screen and  (max-width: 750px){
+@media only screen and  (max-width: 750px) {
+    .mask {
+        height: 100px;
+    }
+    .mask span:nth-child(1) {
+        top: 90px;
+        left: 140px;
+    }
+
+    .mask span {
+        top: 90px !important;
+        left: 140px;
+    }
+
     .title-1 {
         font-size: 60px;
         line-height: 90px;
     }
+
     .section {
         padding-left: 20px;
         padding-right: 20px;
     }
+
     .flex-chlorophyll {
         display: block;
     }
+
     .flex-chlorophyll-text {
         margin-top: 80px;
     }
+
     .flex-carotenoids {
         display: block;
         margin-top: 50px;
@@ -342,6 +382,7 @@ main {
     .mobile {
         display: block;
     }
+
     .desktop {
         display: none;
     }
@@ -350,34 +391,67 @@ main {
         margin-top: 60px;
         margin-right: -20px;
     }
+
     .img-mobile {
         width: 100%;
         margin-top: -150px;
     }
+
     .title-carotinoid {
         margin-top: 0;
     }
+
     .chlorophyll-img {
         margin-top: 50px;
     }
+
     .flex-img-wrap {
         margin-top: 0;
     }
-    .flex-anto-box{
-        margin-left: 50px;
-    }
+
+
     .circle-container {
         margin: 0 0;
     }
+
     .flex-circle-line {
         width: 75%;
     }
+
     .flex-anto-box {
-        margin-top: 340px;
+        margin-top: 0;
+    }
+    .flex-circle {
+        padding: 0;
     }
 }
 
 @media only screen and (max-width: 560px) {
+    .title-1 {
+        font-size: 42px;
+        line-height: 50px;
+    }
+    .title-1 {
+        font-size: 37px;
+    }
+
+    .paragraph {
+        font-size: 22px;
+    }
+
+    .mask {
+        height: 75px;
+    }
+    .mask span:nth-child(1) {
+        top: 50px;
+        left: 88px;
+    }
+
+    .mask span {
+        top: 50px !important;
+        left: 88px;
+    }
+
     .circle {
         r: 20;
     }
@@ -385,7 +459,15 @@ main {
     .flex-circle-element-svg {
         margin: auto;
     }
+
     .link {
-        font-size: 12px;
+        font-size: 18px;
+    }
+    .flex-chlorophyll-text {
+        margin: 0;
+    }
+
+    .mask {
+        height: 50px;
     }
 }
