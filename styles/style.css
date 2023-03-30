@@ -268,6 +268,13 @@ main {
 .mobile {
     display: none;
 }
+.footer-link {
+    margin-left: 200px
+}
+@media only screen and (max-width: 1500px) {
+    .footer-link {
+        margin-left: 50px
+    }
 
 @media only screen and (max-width: 1300px) {
     .title-1 {
@@ -386,6 +393,10 @@ main {
     .desktop {
         display: none;
     }
+    .footer-link {
+    margin-left: 0;
+    }
+}
 
     .img-mobile-block {
         margin-top: 60px;
@@ -454,6 +465,9 @@ main {
 
     .circle {
         r: 20;
+    }
+    .link {
+        font-size: 12px;
     }
 
     .flex-circle-element-svg {
