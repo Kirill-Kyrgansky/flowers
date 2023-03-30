@@ -12,6 +12,13 @@ h1, h2, h3, h4, h5, p, span, a {
     text-decoration: none;
 }
 
+.link {
+    font-size: 48px;
+    line-height: 57px;
+    font-weight: 350;
+    margin-left: 5px;
+}
+
 .color-green {
     color: #5CF935;
 }
@@ -34,8 +41,7 @@ h1, h2, h3, h4, h5, p, span, a {
     font-weight: 500;
     font-size: 75px;
     line-height: 102px;
-    text-transform: capitalize;
-    margin-bottom: 15px;
+     margin-bottom: 15px;
 }
 
 .paragraph {
@@ -59,6 +65,14 @@ h1, h2, h3, h4, h5, p, span, a {
     font-size: 130px;
 }
 
+.logo-footer {
+    /*position: absolute;*/
+    right: 20px;
+}
+
+@media only screen and (max-width: 1500px) {
+
+}
 @media only screen and (max-width: 1150px) {
     .title-1 {
         font-size: 120px;
@@ -95,6 +109,9 @@ h1, h2, h3, h4, h5, p, span, a {
         font-size: 80px;
         line-height: 134px;
     }
+    .logo-footer {
+        width: 100%;
+    }
 }
 
 @media only screen and (max-width: 650px) {
@@ -102,13 +119,14 @@ h1, h2, h3, h4, h5, p, span, a {
         line-height: 49px;
         font-size: 56px;
     }
-    .logo-footer {
-        width: 30%;
-    }
+
 }
 @media only screen and (max-width: 420px) {
     .head-animation-text {
         line-height: 35px;
         font-size: 34px;
+    }
+    .link {
+
     }
 }

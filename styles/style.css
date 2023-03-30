@@ -259,9 +259,13 @@ main {
 .mobile {
     display: none;
 }
-
-@media only screen and (max-width: 1400px) {
-
+.footer-link {
+    margin-left: 200px
+}
+@media only screen and (max-width: 1500px) {
+.footer-link {
+    margin-left: 60px
+}
 }
 
 @media only screen and (max-width: 1150px) {
@@ -382,6 +386,6 @@ main {
         margin: auto;
     }
     .link {
-        font-size: 18px;
+        font-size: 12px;
     }
 }
